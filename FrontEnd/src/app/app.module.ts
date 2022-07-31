@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { HardSoftComponent } from './pages/hard-soft/hard-soft.component';
 
 import { NgCircleProgressModule } from 'ng-circle-progress';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { AboutmeComponent } from './pages/aboutme/aboutme.component';
 import { BannerComponent } from './pages/banner/banner.component';
 import { EducationComponent } from './pages/education/education.component';
@@ -33,7 +34,8 @@ import { FooterComponent } from './pages/footer/footer.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgCircleProgressModule.forRoot({})
+    NgCircleProgressModule.forRoot({}),
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
